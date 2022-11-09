@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../img/LoginPageBG4.jpg);
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: red;
+
+}
+
+div {
+    align-items: center;
+}
+
+.mainBox {
+    background-color: white;
+    border: 3px solid red;
+    border-radius: 15px;
+    width: 500px;
+    height: 550px;
+    margin: 200px 690px;
+}
+.mainBox #Username{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    border: 3px solid green;
+    margin: 50px;
+    padding: 20px;
+}
