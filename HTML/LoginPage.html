@@ -6,34 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to music player</title>
-    <link rel="stylesheet" href="../CSS/LoginPageStyle.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
-    <div class="mainBox">
-        <h1>Login</h1>
-        <form method="post">
-            <div class="details">
-                <input type="text" required>
-                <label>Username</label>
+    <div class="login-container">
+        <div class="image-container">
+            <img src="../img/logo.svg" alt="our proud logo">
+        </div>
+        <div class="inner-login-container">
+            <p>LOG IN</p>
+            <div class="input-field">
+                <p>username</p>
             </div>
-            <div class="details" id="forPass">
-                <input type="password" required>
-                <label>Password</label>
+            <div class="input-field">
+                <p>password</p>
             </div>
-            <div>
-                <button type="submit" id="loginButton"> Login </button>
-            </div>
-
-            <div id="newUser">New User?<span id="createButton"><button type="submit" id="createAccountButton">Create
-                        Account</button></span>
-            </div>
-
-        </form>
-
+            <a class="forgot-pswd-prompt" href="#">forgot password?</a>
+            <button>LOGIN</button>
+            <a class="sign up" href="#">sign up</a>
+        </div>
     </div>
-
-
 </body>
-
 </html>
