@@ -8,8 +8,7 @@ body {
   align-items: center;
 }
 
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -18,6 +17,7 @@ body {
   padding: 0;
 }
 
+/* LOG IN PAGE */
 .login-container {
   border: 1px dashed #808080;
   border-radius: 10px;
@@ -43,7 +43,7 @@ body {
   flex-direction: column;
 }
 
-/* LOG IN */
+/* Log in page */
 .inner-login-container > p {
   font-family: "IM FELL French Canon";
   font-style: normal;
@@ -152,3 +152,5 @@ a:hover {
   height: 10vh;
   width: 10vw;
 }
+
+/* log in page END*/
