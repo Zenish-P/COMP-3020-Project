@@ -73,6 +73,7 @@ input[type="search"]::-webkit-search-cancel-button
     height: 13px;
     width: 13px;
     background: url("../img/orange-cross.svg");
+    cursor: pointer;
 }
 
 /* Nav Bar END*/
