@@ -13,6 +13,11 @@ body
     height: 6vh;
 }
 
+.navbar > .container-fluid
+{
+    padding: 50px;
+}
+
 nav img {
     width: 5rem;
     height: 5rem;
@@ -75,5 +80,41 @@ input[type="search"]::-webkit-search-cancel-button
     background: url("../img/orange-cross.svg");
     cursor: pointer;
 }
-
 /* Nav Bar END*/
+
+
+/* Home content */
+
+.container-fluid h4
+{
+    font-family: 'IM FELL French Canon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 60px;
+
+    color: #F94D16;
+    margin-left: 50px;
+}
+
+.card
+{
+    background: none;
+}
+
+.card > img
+{
+    border-radius: 50%;
+    border: 2px solid #808080;
+}
+
+.card-title
+{
+    font-family: 'IM FELL French Canon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+
+    color: #FFFFFF;
+}
+/* Home content END*/
