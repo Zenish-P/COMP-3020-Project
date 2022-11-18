@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login to music player</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="login-container">
-        <div class="image-container">
-            <img src="../img/logo.svg" alt="our proud logo">
+      <div class="image-container">
+        <img src="../img/logo.svg" alt="our proud logo" />
+      </div>
+      <div class="inner-login-container">
+        <p>LOG IN</p>
+        <!-- bootstrap input field -->
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="username"
+          />
         </div>
-        <div class="inner-login-container">
-            <p>LOG IN</p>
-            <div class="input-field">
-                <p>username</p>
-            </div>
-            <div class="input-field">
-                <p>password</p>
-            </div>
-            <a class="forgot-pswd-prompt" href="#">forgot password?</a>
-            <button>LOGIN</button>
-            <a class="sign up" href="#">sign up</a>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword"
+            aria-describedby="passwordHelp"
+            placeholder="password"
+          />
         </div>
+        <a class="forgot-pswd-prompt" href="#">forgot password?</a>
+        <!-- bootstrap button -->
+        <a type="button" class="btn btn-primary btn-lg btn-block">
+          LOGIN
+        </a>
+        <a href="#">sign up</a>
+      </div>
     </div>
-</body>
+
+    <script src="../Js/bootstrap.min.js"></script>
+  </body>
 </html>

@@ -1,115 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:wght@400;500;700&family=Oxygen:wght@300;400;700&display=swap');
-body 
-{
-    background-color: #000000;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:wght@400;500;700&family=Oxygen:wght@300;400;700&display=swap");
+body {
+  background-color: #000000;
+  box-sizing: border-box;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-html, body {
-    margin: 0;
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
-* 
-{
-    margin: 0;
-    padding: 0; 
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.login-container
-{
-    border: 1px dashed #808080;
-    border-radius: 10px;
+.login-container {
+  border: 1px dashed #808080;
+  border-radius: 10px;
 
-    width: 30vw;
-    height: 80vh;
+  width: 25vw;
+  height: 85vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.inner-login-container
-{
-    border: 1px solid #808080;
-    border-radius: 10px;
+.inner-login-container {
+  border: 1px solid #808080;
+  border-radius: 10px;
 
-    width: 20vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    column-gap: 20vh;
+  width: 15vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* LOG IN */
-.inner-login-container > p 
-{
-    font-family: 'IM FELL French Canon';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    color: #F94D16;
-    text-align: center;
-    
-    
+.inner-login-container > p {
+  font-family: "IM FELL French Canon";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #f94d16;
+  text-align: center;
+
+  margin-bottom: 10vh;
 }
 
-.input-field
-{
-    background: #FFFFFF;
-    border-radius: 50px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
+.form-group {
+  display: flex;
+  align-items: center;
 
-    
+  background: #ffffff;
+  border-radius: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+
+  width: 11vw;
+  height: 3.5vh;
+  margin: 4vh;
+
+  margin-top: 4vh;
+  margin-bottom: 0;
+}
+
+.form-control {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+
+  color: #000000;
+
+  background: #f94d16;
+  border: none;
+  border-radius: 50px;
+  width: 6vw;
+
+  margin-top: 6vh;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #000000;
+
+  /* OR DO THIS */
+  /* background: #f94d16;
+  color: #ffffff; */
+}
+
+/* button pressed */
+.btn:active {
+  background: #f94d16 !important;
+  color: #000000 !important;
+}
+
+a 
+{
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+
+  color: #f94d16;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 
-button
-{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-
-    color: #000000;
-
-    background: #F94D16;
-    border-radius: 50px;
+.forgot-pswd-prompt {
+  margin-left: 4vw;
 }
 
-a
-{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-
-    color: #F94D16;
+.image-container {
+  margin-bottom: 4vw;
 }
 
-.image-container
-{
-    margin-bottom: 2vw;
+.image-container > img {
+  height: 10vh;
+  width: 10vw;
 }
-
-.image-container > img
-{
-    height: 15vh;
-    width: 15vw;
-}
-
-
-
