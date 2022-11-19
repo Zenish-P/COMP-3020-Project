@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/mainStyle.css" />
+
+    <link rel="stylesheet" href="../scss/headernav.css">
+    <title>SearchOnlyBySongs</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand navbar-dark">
+        <div class="container-fluid">
+            <a class="mx-2" href="#">
+                <img src="../img/logo.svg">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LIBRARY</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search" id="searchbox">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <a href="#" id="profile">
+                <img src="../img/profile.svg" id="profile-pic" alt="">
+            </a>
+        </div>
+    </nav>
+    <!-- nav bar END-->
+
+    <div class="container-fluid">
+        <!--Search options - Start-->
+        <div class="optionsBar">
+            <h4>SEARCH BY:
+                <button type="button" class="btn btn-outline-dark optionBtn">ARTISTS</button>
+                <button type="button" class="btn btn-outline-dark optionBtn">SONGS</button>
+                <button type="button" class="btn btn-outline-dark optionBtn">GENRES</button>
+                <button type="button" class="btn btn-outline-dark optionBtn">PLAYLISTS</button>
+            </h4>
+           
+                
+           
+        </div>
+        <!--Search options - End  -->
+    </div>
+
+
+</body>
+
+</html>
