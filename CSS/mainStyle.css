@@ -84,7 +84,6 @@ input[type="search"]::-webkit-search-cancel-button
 
 
 /* Home content */
-
 .container-fluid h4
 {
     font-family: 'IM FELL French Canon';
@@ -94,7 +93,8 @@ input[type="search"]::-webkit-search-cancel-button
     margin-top: 60px;
 
     color: #F94D16;
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-bottom: 15px;
 }
 
 .card
@@ -102,13 +102,41 @@ input[type="search"]::-webkit-search-cancel-button
     background: none;
 }
 
-.card > img
+.genres img
 {
     border-radius: 50%;
     border: 2px solid #808080;
 }
 
-.card-title
+.playlists .card > img
+{
+    border-radius: 10%;
+    width: 7rem;
+    height: 7rem;
+    margin-top: 20px;
+
+}
+
+.playlists .card
+{
+    border: 1px solid #808080;
+    border-radius: 10px;
+}
+
+.playlists .card-title
+{
+    font-family: 'IM FELL French Canon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* identical to box height */
+
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.genres .card-title
 {
     font-family: 'IM FELL French Canon';
     font-style: normal;
@@ -116,5 +144,16 @@ input[type="search"]::-webkit-search-cancel-button
     font-size: 21px;
 
     color: #FFFFFF;
+}
+
+.card-text
+{
+    font-family: 'IM FELL French Canon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+
+    color: #808080;
 }
 /* Home content END*/
