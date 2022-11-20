@@ -198,6 +198,27 @@ a:hover {
   margin-bottom: 10vh;
 }
 
+.musicname{
+  margin: 200px auto;
+  font-family: "IM FELL French Canon";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  z-index: 150;
+}
+
+.time{
+  padding-top: 350px;
+  padding-left: 80px;
+  font-family: "IM FELL French Canon";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
 .circle-wrap {
   margin: 150px auto;
   width: 300px;
@@ -272,26 +293,29 @@ a:hover {
   display: inline-block;
   margin: 4px 2px;
   position: absolute;
+  padding-top: 400px;
 }
 
 .button1{
-  padding-left: 150px;
-  padding-top: 500px;
+  padding-left: 150px;  
 }
 
 .button2{
   padding-left: 220px;
-  padding-top: 500px;
 }
 
 .button3{
   padding-left: 70px;
-  padding-top: 500px;
+}
+
+.button4{
+  padding-top: 450px;
+  padding-left: 100px;  
 }
 
 img {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 
 @keyframes fill{
