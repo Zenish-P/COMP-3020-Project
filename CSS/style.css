@@ -154,3 +154,151 @@ a:hover {
 }
 
 /* log in page END*/
+
+/* MUSIC PLAYER PAGE */
+.musicplayer-container {
+  border: 1px dashed #808080;
+  border-radius: 10px;
+
+  /*width: 25vw;
+  height: 85vh;
+
+  display: flex;*/
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+}
+
+.inner-musicplayer-container {
+  border: 1px solid #808080;
+  border-radius: 10px;
+
+  /*width: 15vw;
+  height: 50vh;
+  display: flex;*/
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner-musicplayer-container > p {
+  font-family: "IM FELL French Canon";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #f94d16;
+  text-align: center;
+
+  margin-bottom: 10vh;
+}
+
+.circle-wrap {
+  margin: 150px auto;
+  width: 300px;
+  height: 300px;
+  background: #000000;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 300px, 300px, 150px);
+}
+
+/* color animation */
+
+/* 3rd progress bar */
+.mask .fill {
+  clip: rect(0px, 150px, 300px, 0px);
+  background-color: #af331e;
+}
+
+.mask.full,
+.circle .fill {
+  animation: fill ease-in-out 10s;
+  transform: rotate(135deg);
+}
+
+.logo-container {
+  margin-bottom: 1vw;
+}
+
+.logo-container > img {
+  height: 5vh;
+  width: 5vw;
+}
+
+.inner-image{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #d2eaf1;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 25px;
+  color: #1e51dc;
+  position: absolute;
+  z-index: 100;
+}
+
+.playbar-container{
+  margin: auto;
+  padding: 0;
+  width: 300px;
+  height: 600px;
+  position: absolute;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  display: inline-block;
+  margin: 4px 2px;
+  position: absolute;
+}
+
+.button1{
+  padding-left: 150px;
+  padding-top: 500px;
+}
+
+.button2{
+  padding-left: 220px;
+  padding-top: 500px;
+}
+
+.button3{
+  padding-left: 70px;
+  padding-top: 500px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes fill{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
