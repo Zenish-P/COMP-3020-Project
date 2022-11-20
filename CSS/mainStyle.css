@@ -6,7 +6,7 @@ body
     background: black;
 }
 
-.navbar
+#top-navbar
 {
     color: black;
     border-bottom: 1px dashed #808080;
@@ -18,7 +18,12 @@ body
     padding: 50px;
 }
 
-nav img {
+#top-navbar img {
+    width: 5rem;
+    height: 5rem;
+}
+
+#profile img {
     width: 5rem;
     height: 5rem;
 }
@@ -40,7 +45,7 @@ nav img {
     font-size: 15px;
 }
 
-.nav-item a {
+#top-navbar a {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -156,4 +161,16 @@ input[type="search"]::-webkit-search-cancel-button
 
     color: #808080;
 }
+
+#play-bar
+{
+    border-top: 1px dashed #808080;
+    height: 4rem;
+}
+
+#play-bar a
+{
+    font-size: 1.3rem;
+}
+
 /* Home content END*/
