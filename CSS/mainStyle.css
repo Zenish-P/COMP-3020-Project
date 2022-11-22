@@ -82,6 +82,8 @@ input[type="search"]::-webkit-search-cancel-button
 }
 /* Nav Bar END*/
 
+/* ___________________________________________________________________________________________ */
+
 
 /* Home content */
 .container-fluid h4
@@ -94,7 +96,7 @@ input[type="search"]::-webkit-search-cancel-button
 
     color: #F94D16;
     margin-left: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .card
@@ -157,3 +159,121 @@ input[type="search"]::-webkit-search-cancel-button
     color: #808080;
 }
 /* Home content END*/
+
+/* ___________________________________________________________________________________________ */
+
+/* Search-Only-By-Songs START */
+/* Option Bar START */
+.btn-outline-dark {
+    --bs-btn-color: #212529;
+    --bs-btn-border-color: #212529;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: black;
+    --bs-btn-hover-border-color: #F94D16;
+    --bs-btn-focus-shadow-rgb: 33, 37, 41;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #212529;
+    --bs-btn-active-border-color: #212529;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #212529;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #212529;
+    --bs-gradient: none;
+    margin-left: 20px;
+}
+
+.optionsbar h4 {
+    width: 10vw;
+    color: #F94D16;
+    margin-left: auto;
+}
+
+.optionBtn {
+    border-color: #808080;
+    color: #808080;
+}
+
+.optionBtn>button:hover {
+    border-color: #F94D16;
+}
+
+/* Option Bar END */
+
+/* Container with songs START */
+.outer-song-container {
+    border: 1px solid #808080;
+    border-radius: 22px;
+    width: 93vw;
+    height: 70vh;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    padding: 2vw;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+.inner-song-container {
+    border: 2px dashed #808080;
+    border-radius: 10px;
+    width: 89vw;
+    height: 60vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Container with songs END */
+
+/* Search-Only-By-Songs END */
+
+/* ___________________________________________________________________________________________ */
+
+
+/*SearchPage START*/
+.row {
+    border: .5px solid rgb(255, 255, 255); 
+    border-radius: 25px;
+    border: 1px dashed rgb(255, 255, 255);
+    padding: 20px;  
+    
+}
+.songs-only{
+    padding: 1px;
+}
+
+.box{
+    background-color: rgb(0, 0, 0);
+    height: 250px;
+    margin: 10px;
+    border: 1px dashed rgb(255, 255, 255);
+    padding: 20px;
+}
+.genreBox{
+    width: 250px;
+    color:red;
+}
+.songsList{
+    width: 750px;
+    color:rgb(255, 255, 255);
+}
+.playlists{
+    border: .5px solid rgb(0, 0, 0);
+}
+.lists{
+    border: black; 
+    background-color: inherit;
+    color:bisque;
+    margin-left: 3px;
+    font-size:small;
+}
+
+/*SearchPage ENDS*/
+
+
+
+/* ___________________________________________________________________________________________ */
+

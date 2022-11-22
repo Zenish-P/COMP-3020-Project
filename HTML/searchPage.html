@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/search.css" />
+    <link rel="stylesheet" href="../CSS/mainStyle.css" />
     
     <link rel="stylesheet" href="../scss/headernav.css">
     <title>Document</title>
@@ -54,18 +54,11 @@
 
 <!--Genre Box
     -->
-    <div class = "container-lg">
-        <div class="row genres" style= "border: .5px solid rgb(255, 255, 255); 
-                                        border-radius: 25px;
-                                        border: 1px dashed rgb(255, 255, 255);
-                                        padding: 20px;  ">
-          
+    <div class = "container-lg">        
+        <div class="row">
+        
         <div class="col d-flex">
-            <div class="box" style="background-color: rgb(0, 0, 0);
-                                    width: 300px;
-                                    border-radius: 25px;
-                                    border: 1px dashed rgb(255, 255, 255);
-                                    padding: 20px;">
+            <div class="box genreBox">
             <div class="card-body d-flex">
 
                 <a style = "text-decoration: none; font-size: x-large; border-radius: 25px;   color: #e61919;margin-left: 20px; margin-right: 20px;" href="">
@@ -79,18 +72,40 @@
     <!-- Song box
     -->
     <div class="col d-flex">
-        <div class="box" style="background-color: rgb(0, 0, 0);
-                                width: 500px;
-                                border-radius: 25px;
-                                border: 1px dashed rgb(255, 255, 255);
-                                padding: 100px;">
-            <a style = "text-decoration: none; font-size: x-large;  color: #e61919;">
-                Genres:   <br>HIP</a>
+        <div class="box songsList">
+            <a style=" color:red">
+                <h4>SONGS:</h4>
             </a>
-                  
             
-                 
-            </div>
+            <div class = "row songs-only">
+              <div class="col d-flex">
+                <button type="button" class="btn btn-outline-dark lists ">
+                  Song Name &emsp; 1234567Listen 
+                  <button class="btn btn-like">
+                    <span class="btn-icon btn--icon-default">
+                        <span class="fa fa-heart"></span>
+                    </span>
+                    <span class="btn-icon btn--icon-liked">
+                        <span class="fa fa-heart"></span>
+                    </span>
+                    <span class="btn-content  btn-content--liked">
+                        Liked
+                    </span>
+                    <span class="btn-content btn-content--default">
+                        Like
+                    </span>
+                </button>
+
+                  
+                </button>
+
+              </div>
+              <div class="col d-flex">
+                yo
+
+              </div>
+            </div>                 
+          </div>
         </div>
 
     </div>
@@ -102,10 +117,8 @@
   The 
 -->
     <div class = "container-fluid">
-      <div class="row genres">
+      <div class="row playlists">
         <h4>TOP PLAYLISTS</h4>
-        <div class="row playlists">
-
           <div class="col d-flex justify-content-center">
             <div class="card" style="width: 10rem;background-color: black;">
               <img src="../img/img-2.jpg" class="card-img-top mx-auto" alt="...">
@@ -168,7 +181,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
 
