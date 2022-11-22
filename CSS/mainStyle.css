@@ -191,8 +191,8 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-left: 3vw;
     padding: 2vw;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -200,14 +200,21 @@ input[type="search"]::-webkit-search-cancel-button {
     border: 2px dashed #808080;
     border-radius: 10px;
     width: 89vw;
-    height: 60vh;
-    
+    height: 65vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
-
+#songs-font{
+    font-family: 'IM FELL French Canon';
+    font-size: 20px;
+    color: #F94D16;
+    justify-content: flex-start;
+}
+#songs-setting{
+    font-family: 'IM FELL French Canon';
+    font-size: 25px;
+    color: white;
+}
 /* Container with songs END */
 
 /* Search-Only-By-Songs END */
