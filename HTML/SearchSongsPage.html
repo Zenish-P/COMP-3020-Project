@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/mainStyle.css" />
 
-    <link rel="stylesheet" href="../scss/headernav.css">
     <title>SearchOnlyBySongs</title>
 </head>
 
 <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand navbar-dark">
+    <nav class="navbar navbar-expand navbar-dark fixed-top" id="top-navbar">
         <div class="container-fluid">
             <a class="mx-2" href="#">
                 <img src="../img/logo.svg">
@@ -32,9 +32,11 @@
             <form class="d-flex" role="search" id="searchbox">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             </form>
-            <a href="#" id="profile">
-                <img src="../img/profile.svg" id="profile-pic" alt="">
-            </a>
+            <span class="nav-item">
+                <a href="#" id="profile">
+                    <i class="bi bi-person-circle"></i>
+                </a>
+            </span>
         </div>
     </nav>
     <!-- nav bar END-->
