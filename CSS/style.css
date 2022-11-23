@@ -384,6 +384,28 @@ img {
   height: 28px;
 }
 
+/* Slider*/
+
+.volume-logo{
+  padding-left: 150px;
+  padding-top: 450px;
+}
+
+.slidecontainer {
+  padding-left: 150px;
+  
+  width: 100%;
+  z-index: 200px;
+}
+
+.form-label{
+  
+}
+
+.slide{
+  
+}
+
 @keyframes fill{
   0% {
     transform: rotate(0deg);
