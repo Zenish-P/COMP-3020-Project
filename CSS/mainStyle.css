@@ -13,7 +13,7 @@ body {
 }
 
 .navbar>.container-fluid {
-    padding: 50px;
+    padding: 0px 50px 0px 50px;
 }
 
 #top-navbar img
@@ -188,8 +188,9 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #808080;
 }
 
-.optionBtn>button:hover {
+.optionBtn > button:hover {
     border-color: #F94D16;
+    /* color: #fff; */
 }
 
 /* Option Bar END */
@@ -199,7 +200,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border: 1px solid #808080;
     border-radius: 22px;
     width: 93vw;
-    height: 70vh;
+    min-height: 65vh;
     margin-top: 5vh;
     margin-left: 3vw;
     padding: 2vw;
@@ -214,7 +215,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 10px;
     width: 89vw;
 
-    height: 65vh;
+    min-height: 62vh;
     display: flex;
     flex-direction: column;
 }
@@ -226,10 +227,16 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 #songs-setting{
     font-family: 'IM FELL French Canon';
-    font-size: 25px;
+    font-size: 23px;
     color: white;
 }
-
+.tableEdit{
+    color: #808080;
+    font-size: 17px;
+}
+.song-hover:hover{
+    color: #F94D16;
+}
 /* Container with songs END */
 
 /* Search-Only-By-Songs END */
@@ -282,6 +289,9 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: medium;
 
     color: #FFFFFF;
+}
+.likeAndAdd:hover{    
+    color: #F94D16;
 }
 /*SearchPage ENDS*/
 
