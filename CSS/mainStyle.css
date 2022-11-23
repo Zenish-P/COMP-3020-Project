@@ -219,6 +219,9 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     flex-direction: column;
 }
+#row-padding {
+    padding: 0px;
+}
 #songs-heading-font{
     font-family: 'IM FELL French Canon';
     font-size: 25px;
