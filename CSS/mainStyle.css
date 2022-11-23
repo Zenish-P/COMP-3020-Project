@@ -200,7 +200,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border: 1px solid #808080;
     border-radius: 22px;
     width: 93vw;
-    min-height: 70vh;
+    min-height: 65vh;
     margin-top: 5vh;
     margin-left: 3vw;
     padding: 2vw;
@@ -215,7 +215,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 10px;
     width: 89vw;
 
-    min-height: 65vh;
+    min-height: 62vh;
     display: flex;
     flex-direction: column;
 }
