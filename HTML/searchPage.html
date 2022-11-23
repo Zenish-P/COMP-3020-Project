@@ -12,38 +12,36 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-expand navbar-dark fixed-top" id="top-navbar">
-        <div class="container-fluid">
-            <a class="mx-2" href="#">
-                <img src="../img/logo.svg">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">LIBRARY</a>
-                  </li>
-                </ul>
-            </div>
-          <form class="d-flex" role="search" id="searchbox">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-          <span class="nav-item">
-            <a href="#" id="profile">
-              <i class="bi bi-person-circle"></i>
-            </a>
-          </span>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand navbar-dark" id="top-navbar">
+    <div class="container-fluid">
+        <a class="mx-2" href="./index.html">
+            <img src="../img/logo.svg">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="searchPage.html">EXPLORE</a>
+              </li>
+            </ul>
         </div>
-    </nav>
-    <!-- nav bar END-->
-
-    <!--
-    -->
+      <form class="d-flex" role="search" id="searchbox">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <span class="nav-item">
+        <a href="#" id="profile">
+          <i class="bi bi-person-circle"></i>
+        </a>
+      </span>
+    </div>
+  </nav>
+  <!-- nav bar END-->
 
     <div class = "container-fluid">
-        <div class="optionsBar"     >
+        <div class="optionsBar">
             <h4>SEARCH BY:
                 <button type="button" class="btn btn-outline-dark optionBtn">Artist</button>
                 <button type="button" class="btn btn-outline-dark optionBtn">Songs</button>
@@ -277,6 +275,77 @@
     </div>
   </div>
 </div>
+
+    <!-- breaks so that play bar scrolls further -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <!-- Home content END -->
+  
+  <!-- Play bar -->
+    <nav id="play-bar" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-bottom justify-content-center">
+      <div class="container-fluid">
+        <button class="navbar-toggler ms-auto" type="button"
+          data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <img src="../img/img-2.jpg" class="d-inline-block my-2">
+            </li>
+            <li class="nav-item" id="playing-song-info">
+              <h5>Songname</h5>
+              <p >Artists</p>
+            </li>
+          </ul>
+  
+          <ul id="play-bar-buttons" class="navbar-nav ">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="bi bi-repeat"></i>
+              </a>
+            </li>
+  
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="bi bi-skip-start-fill"></i>
+              </a>
+            </li>
+  
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="bi bi-play-fill"></i>
+              </a>
+            </li>
+  
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="bi bi-skip-end-fill"></i>
+              </a>
+            </li>
+  
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="bi bi-shuffle"></i>
+              </a>
+            </li>
+          </ul>
+  
+          <div class="form-inline ms-auto">
+            <label class="text-secondary" for="volume-slider"><i class="bi
+              bi-volume-up-fill"></i> </label>
+            <input type="range" class="mr-sm-2" id="volume-slider">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Play bar end -->
 
     
 </body>
