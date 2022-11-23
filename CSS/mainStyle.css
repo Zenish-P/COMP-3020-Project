@@ -8,7 +8,7 @@ body {
 
 .navbar {
     color: black;
-    height: 6vh;
+    height: 3vw;
 }
 
 #top-navbar
@@ -26,6 +26,11 @@ body {
     height: 5rem;
 }
 
+#top-navbar i
+{
+    font-size: 2rem;
+}
+
 .form-control {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -35,7 +40,7 @@ body {
     outline: none;
     padding: 0 20px;
     width: 100%;
-    height: 3vh;
+    height: 1.2vw;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -66,16 +71,6 @@ body {
     color: #F94D16;
 } */
 
-
-#profile-pic {
-    height: 5rem;
-    width: 5rem;
-}
-
-#profile-pic:hover {
-    filter: brightness(0) saturate(100%) invert(34%) sepia(38%) saturate(4575%) hue-rotate(354deg) brightness(105%) contrast(95%);
-} */
-
 /* changes search bar's cancel button to an orange cross */
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
@@ -101,10 +96,16 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #F94D16;
 
     margin-bottom: 30px;
+    margin-left: 2.7rem;
 }
 
 .card {
     background: none;
+}
+
+.genres, .playlists
+{
+    margin-left: 2rem;
 }
 
 
@@ -114,6 +115,23 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 10rem;
     height: 10rem;
 }
+
+.genres .card:hover img {
+    border: 2px solid #F94D16;
+    cursor: pointer;
+}
+
+.genres .card:hover h5
+{
+    color: #F94D16;
+}
+
+.playlists .card:hover{
+    border: 1px solid #F94D16;
+    cursor: pointer;
+    background-color: #171717;
+}
+
 
 .playlists .card>img {
     border-radius: 10%;
@@ -326,5 +344,19 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 /*SearchPage ENDS*/
 
+
+/* scroll bar customization */
+::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #171717;
+    border-radius: 100vw;
+  }
 
 
