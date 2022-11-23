@@ -80,6 +80,11 @@ input[type="search"]::-webkit-search-cancel-button {
     cursor: pointer;
 }
 
+.text-success
+{
+    color: #F94D16 !important;
+}
+
 /* Nav Bar END*/
 
 /* ___________________________________________________________________________________________ */
@@ -247,6 +252,11 @@ ul
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.bg-success
+{
+    background-color: #F94D16 !important;
 }
 
 /* Play Bar END*/
