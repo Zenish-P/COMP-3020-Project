@@ -8,8 +8,12 @@ body {
 
 .navbar {
     color: black;
-    border-bottom: 1px dashed #808080;
-    height: 6vh;
+    height: 3vw;
+}
+
+#top-navbar
+{
+    border-bottom: 1px dashed #808080;  
 }
 
 .navbar>.container-fluid {
@@ -22,6 +26,11 @@ body {
     height: 5rem;
 }
 
+#top-navbar i
+{
+    font-size: 2rem;
+}
+
 .form-control {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -31,7 +40,7 @@ body {
     outline: none;
     padding: 0 20px;
     width: 100%;
-    height: 3vh;
+    height: 1.2vw;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
@@ -62,16 +71,6 @@ body {
     color: #F94D16;
 } */
 
-
-#profile-pic {
-    height: 5rem;
-    width: 5rem;
-}
-
-#profile-pic:hover {
-    filter: brightness(0) saturate(100%) invert(34%) sepia(38%) saturate(4575%) hue-rotate(354deg) brightness(105%) contrast(95%);
-} */
-
 /* changes search bar's cancel button to an orange cross */
 input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
@@ -95,18 +94,44 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-top: 60px;
 
     color: #F94D16;
-    margin-left: 40px;
+
     margin-bottom: 30px;
+    margin-left: 2.7rem;
 }
 
 .card {
     background: none;
 }
 
+.genres, .playlists
+{
+    margin-left: 2rem;
+}
+
+
 .genres img {
     border-radius: 50%;
     border: 2px solid #808080;
+    width: 10rem;
+    height: 10rem;
 }
+
+.genres .card:hover img {
+    border: 2px solid #F94D16;
+    cursor: pointer;
+}
+
+.genres .card:hover h5
+{
+    color: #F94D16;
+}
+
+.playlists .card:hover{
+    border: 1px solid #F94D16;
+    cursor: pointer;
+    background-color: #171717;
+}
+
 
 .playlists .card>img {
     border-radius: 10%;
@@ -119,6 +144,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .playlists .card {
     border: 1px solid #808080;
     border-radius: 10px;
+    width: 10rem;
 }
 
 .playlists .card-title {
@@ -143,6 +169,18 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-bottom: 0;
 }
 
+.playlists .card-title
+{
+    margin-bottom: 0;
+}
+
+.card-body
+{
+    margin-left: 8px;
+}
+
+
+
 .card-text {
     font-family: 'IM FELL French Canon';
     font-style: normal;
@@ -153,9 +191,65 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #808080;
 }
 
-
-
 /* Home content END*/
+
+/* Play bar*/
+
+#play-bar h5
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+#play-bar p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 0;
+
+    color: #808080;
+}
+
+#play-bar img
+{
+    width:3.5rem;
+    height: 3.5rem;
+    border-radius: 10px;
+}
+
+#play-bar
+{
+    border-top: 1px solid #808080;
+    height:5rem;
+    font-size: 1rem;
+}
+
+#play-bar-buttons
+{
+    font-size: 1.6rem;
+}
+
+#playing-song-info
+{
+    margin-left: 15px;
+}
+
+ul 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Play Bar END*/
 
 /* Search-Only-By-Songs START */
 /* Option Bar START */
@@ -246,7 +340,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 
 /*SearchPage START*/
-.row {
+.search-box {
     border-radius: 25px;
     border: .5px dashed #808080;
     padding: 20px;  
@@ -296,26 +390,18 @@ input[type="search"]::-webkit-search-cancel-button {
 /*SearchPage ENDS*/
 
 
-
-/* ___________________________________________________________________________________________ */
-
-#play-bar
-{
-    border-top: 1px dashed #808080;
-    height: 4rem;
-    font-size: 1rem;
-}
-
-#play-bar-buttons
-{
-    font-size: 1.6rem;
-}
-
-#playing-song-info
-{
-    align-items: center;
-}
-
-/* Home content END*/
+/* scroll bar customization */
+::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #171717;
+    border-radius: 100vw;
+  }
 
 
