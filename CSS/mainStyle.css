@@ -11,6 +11,11 @@ body {
     height: 3vw;
 }
 
+.bg-primary
+{
+    background: black !important;
+}
+
 #top-navbar
 {
     border-bottom: 1px dashed #808080;  
@@ -57,12 +62,15 @@ body {
     font-size: 24px;
     font-weight: 700;
     margin-left: 2rem;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #FFFFFF;
 }
 
 
 .nav-item > a:hover
 {
-    color: #F94D16;
+    color: #F94D16 !important;
 }
 
 /* makes active button orange */
@@ -274,6 +282,11 @@ ul
     color: #F8F8F8;
 }
 
+.volume-control::-ms-fill-lower
+{
+    background-color: #F94D16 !important;
+    color: #F94D16 !important;
+}
 /* Play Bar END*/
 
 /* Search-Only-By-Songs START */
