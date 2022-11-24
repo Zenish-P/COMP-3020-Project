@@ -259,6 +259,11 @@ ul
     background-color: #F94D16 !important;
 }
 
+#controls
+{
+    min-width: 40vw;
+}
+
 /* Play Bar END*/
 
 /* Search-Only-By-Songs START */
