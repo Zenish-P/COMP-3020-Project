@@ -378,6 +378,20 @@ ul
 
 
 /*SearchPage START*/
+.search-by-container h4{
+    font-family: 'IM FELL French Canon';
+    font-size: 30px;
+    margin-top: 30px;
+
+    color: #F94D16;
+
+    margin-bottom: 30px;
+    margin-left: 2.7rem;
+}
+.box-genre-songs{
+    margin-left: 3.7rem;
+    margin-right: 2.7rem;
+}
 .search-box {
     border-radius: 25px;
     border: .5px dashed #808080;
@@ -410,7 +424,7 @@ ul
 .lists{
     border: black; 
     background-color: inherit;
-    color:bisque;
+    color:rgb(200, 195, 190);
     margin-left: 3px;
     font-size:small;
 }
