@@ -264,6 +264,16 @@ ul
     min-width: 40vw;
 }
 
+.progress
+{
+    height: 0.3vh;
+}
+
+.bi-volume-up-fill
+{
+    color: #F8F8F8;
+}
+
 /* Play Bar END*/
 
 /* Search-Only-By-Songs START */
