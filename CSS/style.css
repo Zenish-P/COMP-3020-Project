@@ -17,6 +17,102 @@ html, body {
   padding: 0;
 }
 
+/* Navbar */
+
+.navbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  color: black;
+  height: 3vw;
+}
+
+.bg-primary
+{
+  background: black !important;
+}
+
+#top-navbar
+{
+  border-bottom: 1px dashed #808080;  
+}
+
+.navbar>.container-fluid {
+  padding: 0px 50px 0px 50px;
+}
+
+#top-navbar img
+{
+  width: 5rem;
+  height: 5rem;
+}
+
+#top-navbar i
+{
+  font-size: 2rem;
+}
+
+.form-control {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  width: 100%;
+  height: 1.2vw;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.nav-item a {
+  font-family: 'Inter';
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+#top-navbar a {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 2rem;
+  font-family: 'Inter';
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+
+.nav-item > a:hover
+{
+  color: #F94D16 !important;
+}
+
+/* makes active button orange */
+/* .navbar-nav > .active > a 
+{
+  color: #F94D16;
+} */
+
+/* changes search bar's cancel button to an orange cross */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 13px;
+  width: 13px;
+  background: url("../img/orange-cross.svg");
+  cursor: pointer;
+}
+
+.text-success
+{
+  color: #F94D16 !important;
+}
+
+
 /* LOG IN PAGE */
 .login-container {
   border: 1px dashed #808080;
@@ -256,11 +352,11 @@ a:hover {
 
 .time{
   padding-top: 350px;
-  padding-left: 80px;
-  font-family: "IM FELL French Canon";
+  padding-left: 100px;
+  font-family: "inter";
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 200;
+  font-size: 15px;
   color: #ffffff;
 }
 
@@ -360,9 +456,27 @@ a:hover {
   padding-left: 100px;  
 }
 
+.prev-music-container{
+  border-radius: 50%;
+  border: 1px dashed #808080;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.next-music-container{
+  border-radius: 50%;
+  border: 1px dashed #808080;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
 .prevbutton{
   border-radius: 50%;
-
+  margin-top: 10px;
 }
 
 .prev-image{
