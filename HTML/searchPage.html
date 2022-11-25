@@ -39,66 +39,42 @@
     </div>
   </nav>
   <!-- nav bar END-->
-      <div class="search-by-container">
-        <div class="optionsBar">
-            <h4>SEARCH BY:
-                <button type="button" class="btn btn-outline-dark optionBtn">Artist</button>
-                <button type="button" class="btn btn-outline-dark optionBtn">Songs</button>
-                <button type="button" class="btn btn-outline-dark optionBtn">Genres</button>
-                <button type="button" class="btn btn-outline-dark optionBtn">Playlists</button>
-            </h4>      
-        </div>
-      </div>
+
+<!-- SEARCH CONTENT -->
+<div class = "container-fluid" id="options-bar">
+  <div class="optionsBar d-flex justify-content-start flex-row">
+    <h4>SEARCH BY:</h4>
+    <button type="button" class="btn btn-outline-dark optionBtn">artists</button>
+    <button type="button" class="btn btn-outline-dark optionBtn">songs</button>
+    <button type="button" class="btn btn-outline-dark optionBtn">genres</button>
+    <button type="button" class="btn btn-outline-dark optionBtn">playlists</button>
+  </div>
+</div>
+
 
 <!--Genre Box
     -->
-    <div class = "box-genre-songs">        
-        <div class="row search-box">
-        
-        <div class="col d-flex">
-          <div class="box genreBox">
-            <div class="card-body d-flex">
-
-                <a style = "text-decoration: none; font-size: x-large; border-radius: 25px;   color: #e61919;margin-left: 20px; margin-right: 20px;" href="">
-                    Genres:   <br>HIP-HOP</a>
-                </a>
-                
-            </div>
+  <div class = "container-fluid search-boxes-container">        
+    <div class="row justify-content-between">
+      <div class="col">
+          <div class="box genre-box">
+              <h4>GENRES:</h4>
+              <h3>HIP- HOP</h3>
         </div>
     </div>
 
     <!-- Song box
     -->
-    <div class="col d-flex">
-        <div class="box songsList">
-            <a style=" color:red">
-                <h4>SONGS:</h4>
-            </a>
-            
-            <div class = "row songs-only">
+    <div class="col">
+        <div class="box songs-list">
+              <h4>SONGS:</h4>
+            <div class = "row songs-only justify-content-between">
               <div class="col d-flex">
                 <button type="button" class="btn btn-outline-dark lists ">
                   1. Song Name &emsp; 1234567Listen &emsp; 1:47
                   <i class="bi bi-suit-heart-fill mx-3 heart-btn"></i>
                 </button>
               </div>
-
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <i class="bi bi-suit-heart-fill mx-3 heart-btn"></i>
-                </button>
-              </div>
-            </div>  
-                 
-            <div class = "row songs-only">
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <i class="bi bi-suit-heart-fill mx-3 heart-btn"></i>
-                </button>
-              </div>
-
               <div class="col d-flex">
                 <button type="button" class="btn btn-outline-dark lists ">
                   1. Song Name &emsp; 1234567Listen &emsp; 1:47
@@ -113,7 +89,6 @@
                   <i class="bi bi-suit-heart-fill mx-3 heart-btn"></i>
                 </button>
               </div>
-
               <div class="col d-flex">
                 <button type="button" class="btn btn-outline-dark lists ">
                   1. Song Name &emsp; 1234567Listen &emsp; 1:47
@@ -128,7 +103,6 @@
                   <i class="bi bi-suit-heart-fill mx-3 heart-btn"></i>
                 </button>
               </div>
-
               <div class="col d-flex">
                 <button type="button" class="btn btn-outline-dark lists ">
                   1. Song Name &emsp; 1234567Listen &emsp; 1:47
@@ -143,7 +117,20 @@
                   <i class="bi bi-suit-heart-fill mx-3 heart-btn"></i>
                 </button>
               </div>
-
+              <div class="col d-flex">
+                <button type="button" class="btn btn-outline-dark lists ">
+                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
+                  <i class="bi bi-suit-heart-fill mx-3 heart-btn"></i>
+                </button>
+              </div>
+            </div>  
+            <div class = "row songs-only">
+              <div class="col d-flex">
+                <button type="button" class="btn btn-outline-dark lists ">
+                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
+                  <i class="bi bi-suit-heart-fill mx-3 heart-btn"></i>
+                </button>
+              </div>
               <div class="col d-flex">
                 <button type="button" class="btn btn-outline-dark lists ">
                   1. Song Name &emsp; 1234567Listen &emsp; 1:47;
@@ -159,93 +146,88 @@
                 </a>
               </div>
             </div>  
-            
           </div>
         </div>
-
     </div>
 </div>
 
-    
+
+<div class="container-fluid">
+  <h4>FOR YOU</h4>
+    <div class="row playlists">
+      <div class="col ">
+        <div class="card" >
+          <img src="../img/img-14.png" class="card-img-top mx-auto " alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Genre Name</h5>
+            <p class="card-text text-start">Artist</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" >
+          <img src="../img/img-15.png" class="card-img-top mx-auto " alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Genre Name</h5>
+            <p class="card-text text-start">Artist</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" >
+          <img src="../img/img-16.png" class="card-img-top mx-auto " alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Genre Name</h5>
+            <p class="card-text text-start">Artist</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" >
+          <img src="../img/img-17.png" class="card-img-top mx-auto " alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Genre Name</h5>
+            <p class="card-text text-start">Artist</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" >
+          <img src="../img/img-18.png" class="card-img-top mx-auto " alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Genre Name</h5>
+            <p class="card-text text-start">Artist</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" >
+          <img src="../img/img-1.png" class="card-img-top mx-auto " alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Genre Name</h5>
+            <p class="card-text text-start">Artist</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" >
+          <img src="../img/img-3.jpg" class="card-img-top mx-auto " alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-start">Genre Name</h5>
+            <p class="card-text text-start">Artist</p>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
-<!--
-  The 
--->
-<div class="search-by-container">
-  <h4>TOP PLAYLISTS</h4>
-  <div class="row playlists">
-    <div class="col ">
-      <div class="card" >
-        <img src="../img/img-14.png" class="card-img-top mx-auto " alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-start">Genre Name</h5>
-          <p class="card-text text-start">Artist</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" >
-        <img src="../img/img-15.png" class="card-img-top mx-auto " alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-start">Genre Name</h5>
-          <p class="card-text text-start">Artist</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" >
-        <img src="../img/img-16.png" class="card-img-top mx-auto " alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-start">Genre Name</h5>
-          <p class="card-text text-start">Artist</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" >
-        <img src="../img/img-17.png" class="card-img-top mx-auto " alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-start">Genre Name</h5>
-          <p class="card-text text-start">Artist</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" >
-        <img src="../img/img-18.png" class="card-img-top mx-auto " alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-start">Genre Name</h5>
-          <p class="card-text text-start">Artist</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" >
-        <img src="../img/img-1.png" class="card-img-top mx-auto " alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-start">Genre Name</h5>
-          <p class="card-text text-start">Artist</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card" >
-        <img src="../img/img-3.jpg" class="card-img-top mx-auto " alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-start">Genre Name</h5>
-          <p class="card-text text-start">Artist</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- SEARCH CONTENT END -->
+
     <!-- breaks so that play bar scrolls further -->
     <br>
     <br>
     <br>
     <br>
     <br>
-  <!-- Home content END -->
   
     <!-- Play bar -->
   <nav id="play-bar" class="navbar navbar-expand-sm bg-primary fixed-bottom">

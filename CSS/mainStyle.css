@@ -381,6 +381,27 @@ ul
 
 
 /*SearchPage START*/
+#options-bar h4
+{
+    margin: 0;
+}
+
+#options-bar .btn
+{
+    border: 1px solid #808080;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 7rem;
+    color: #FFFFFF;
+}
+
+#options-bar
+{
+    margin-top: 30px;
+    margin-left: 2.7rem;
+}
+
+
 .search-by-container h4{
     font-family: 'IM FELL French Canon';
     font-size: 30px;
@@ -391,19 +412,29 @@ ul
     margin-bottom: 30px;
     margin-left: 2.7rem;
 }
-.box-genre-songs{
-    margin-left: 3.7rem;
-    margin-right: 2.7rem;
+
+.search-boxes-container
+{
+    border: 1px solid #808080;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 95%;
+    margin-left: 3.2rem;
+    margin-top: 30px;
+
+    padding: 20px;
 }
-.search-box {
-    border-radius: 25px;
-    border: .5px dashed #808080;
-    padding: 20px;  
-    
+
+
+.songs-list
+{
+    border: 1px dashed #808080;
+    border-radius: 10px;
 }
-.songs-only{
-    padding: 1px;
-    border: black;
+
+.songs-list > h4
+{
+    margin: 0;
 }
 
 .box{
@@ -413,14 +444,30 @@ ul
     border: .5px dashed #808080;
     padding: 20px;
 }
-.genreBox{
+.genre-box{
     width: 250px;
-    color:red;
+    border: 1px dashed #808080;
+    border-radius: 10px;
 }
-.songsList{
-    width: 750px;
-    color:rgb(121, 121, 121);
+
+.genre-box > h4
+{
+    margin: 0;
+    font-family: 'IM FELL French Canon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
 }
+
+.genre-box > h3
+{
+    font-family: 'IM FELL French Canon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39px;
+    color: #FFFFFF;
+}
+
 .playlists{
     border: .5px solid rgb(0, 0, 0);
 }
@@ -458,5 +505,24 @@ ul
     background: #171717;
     border-radius: 100vw;
   }
+
+
+  /* add breakpoint to boxes to increase border thickness at 4k */
+@media(min-width: 2500px)
+{
+    .genre-box
+    {
+        width: 250px;
+        border: 2px dashed #808080;
+        border-radius: 10px;
+    }
+
+    .songs-list
+    {
+        border: 2px dashed #808080;
+        border-radius: 10px;
+    }
+
+}
 
 
