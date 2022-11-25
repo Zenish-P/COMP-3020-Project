@@ -378,6 +378,26 @@ ul
 
 
 /*SearchPage START*/
+#options-bar h4
+{
+    margin: 0;
+}
+
+#options-bar .btn
+{
+    border: 1px solid #808080;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 7rem;
+}
+
+#options-bar
+{
+    margin-top: 30px;
+    margin-left: 2.7rem;
+}
+
+
 .search-by-container h4{
     font-family: 'IM FELL French Canon';
     font-size: 30px;
