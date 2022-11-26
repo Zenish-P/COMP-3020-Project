@@ -354,6 +354,9 @@ ul
     display: flex;
     flex-direction: column;
 }
+#row-padding {
+    padding: 0px;
+}
 #songs-heading-font{
     font-family: 'IM FELL French Canon';
     font-size: 25px;
@@ -569,7 +572,19 @@ path:hover
     background: #171717;
     border-radius: 100vw;
   }
-
+  .set-col{
+    --bs-btn-color: #ffffff;
+    --bs-btn-font-size: 1.5rem;
+  }
+.dropdown-menu{
+    font-family: 'IM FELL French Canon';
+    font-size: 17px;
+    background: #46464a;
+    --bs-dropdown-link-color: white;
+    --bs-dropdown-link-hover-color: #F94D16;
+    display: block;
+    visibility: collapse;
+}
 
   /* add breakpoint to boxes to increase border thickness at 4k */
 @media(min-width: 2500px)
@@ -596,5 +611,3 @@ path:hover
         display: none;
     }
 }
-
-
