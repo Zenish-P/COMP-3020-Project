@@ -392,6 +392,12 @@ ul
     color: #FFFFFF;
 }
 
+#options-bar .btn:hover
+{
+    color: #F94D16;
+    border: 1px solid #F94D16;
+}
+
 #options-bar
 {
     margin-top: 30px;
@@ -434,6 +440,56 @@ ul
     margin: 0;
 }
 
+path
+{
+    visibility: hidden;
+}
+
+path:hover
+{
+    cursor: pointer;
+}
+
+#songs-search-box h5
+{
+    font-family: 'IM FELL French Canon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#songs-search-box p
+{
+    font-family: 'IM FELL French Canon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+
+    color: #808080;
+}
+
+#songs-search-box .song-row:hover h5
+{
+    color: #F94D16;
+    cursor: pointer;
+}
+
+#songs-search-box .song-row:hover path
+{
+    visibility: visible;
+}
+
+#songs-search-box .row
+{
+    margin-top: 10px;
+}
+
+
 .box{
     background-color: rgb(0, 0, 0);
     height: 250px;
@@ -441,10 +497,18 @@ ul
     border: .5px dashed #808080;
     padding: 20px;
 }
+
 .genre-box{
     width: 250px;
     border: 1px dashed #808080;
     border-radius: 10px;
+}
+
+.genre-box:hover
+{
+    border: 1px dashed #F94D16;
+    cursor: pointer;
+    background: #171717;
 }
 
 .genre-box > h4
@@ -520,6 +584,14 @@ ul
         border-radius: 10px;
     }
 
+}
+
+@media (max-width: 1550px) 
+{
+    #second-song-column
+    {
+        display: none;
+    }
 }
 
 
