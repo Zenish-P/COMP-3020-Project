@@ -5,6 +5,9 @@ body {
     background: black;
 }
 
+#top-navbar .active a {
+    color: #F94D16;
+}
 
 .navbar {
     color: black;
