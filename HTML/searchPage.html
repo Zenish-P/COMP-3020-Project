@@ -20,11 +20,11 @@
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link" href="./index.html">HOME</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="searchPage.html">EXPLORE</a>
+              <li class="nav-item active">
+                <a class="nav-link text-success" href="searchPage.html">EXPLORE</a>
               </li>
             </ul>
         </div>
@@ -40,241 +40,251 @@
   </nav>
   <!-- nav bar END-->
 
-    <div class = "container-fluid">
-        <div class="optionsBar">
-            <h4>SEARCH BY:
-                <button type="button" class="btn btn-outline-dark optionBtn">Artist</button>
-                <button type="button" class="btn btn-outline-dark optionBtn">Songs</button>
-                <button type="button" class="btn btn-outline-dark optionBtn">Genres</button>
-                <button type="button" class="btn btn-outline-dark optionBtn">Playlists</button>
-            </h4>      
-        </div>
+  <!-- SEARCH CONTENT -->
+  <div class = "container-fluid" id="options-bar">
+    <div class="optionsBar d-flex justify-content-start flex-row">
+      <h4>SEARCH BY:</h4>
+      <button type="button" class="btn btn-outline-dark optionBtn">artists</button>
+      <button type="button" class="btn btn-outline-dark optionBtn">songs</button>
+      <button type="button" class="btn btn-outline-dark optionBtn">genres</button>
+      <button type="button" class="btn btn-outline-dark optionBtn">playlists</button>
     </div>
+  </div>
 
-<!--Genre Box
-    -->
-    <div class = "container-lg">        
-        <div class="row search-box">
-        
-        <div class="col d-flex">
-          <div class="box genreBox">
-            <div class="card-body d-flex">
 
-                <a style = "text-decoration: none; font-size: x-large; border-radius: 25px;   color: #e61919;margin-left: 20px; margin-right: 20px;" href="">
-                    Genres:   <br>HIP-HOP</a>
-                </a>
-                
-            </div>
+  <!--Genre Box
+      -->
+  <div class = "container-fluid search-boxes-container">        
+    <div class="row justify-content-between">
+      <div class="col">
+        <div class="box genre-box">
+          <h4>GENRES:</h4>
+          <h3>HIP- HOP</h3>
         </div>
-    </div>
+      </div>
 
     <!-- Song box
     -->
-    <div class="col d-flex">
-        <div class="box songsList">
-            <a style=" color:red">
-                <h4>SONGS:</h4>
-            </a>
-            
-            <div class = "row songs-only">
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <button style="background-color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg>
-                  </button>
-                </button>
+      <div class="col">
+        <div class="box songs-list">
+          <h4>SONGS:</h4>
+          <div class = "row justify-content-between" id="songs-search-box">
+            <div class="col-auto">
+              <div class="row gx-4 song-row">
+                <div class="col-auto">
+                  <h5 class="text-start">Songname</h5>
+                  <p class="text-start">Artists</p>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1232141 Listens</h5>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1:47</h5>
+                </div>
+                <div class="col-auto">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.126 5.26212C16.8773 4.68625 16.5187 4.16441 16.0702 3.72579C15.6214 3.28587 15.0923 2.93628 14.5116 2.69601C13.9095 2.44588 13.2636 2.31785 12.6116 2.31935C11.6969 2.31935 10.8044 2.56984 10.0288 3.04298C9.84326 3.15617 9.66699 3.28048 9.5 3.41593C9.33301 3.28048 9.15674 3.15617 8.97119 3.04298C8.19561 2.56984 7.30313 2.31935 6.38838 2.31935C5.72969 2.31935 5.09141 2.44552 4.48838 2.69601C3.90576 2.93722 3.38066 3.28419 2.92979 3.72579C2.48076 4.16391 2.12206 4.68588 1.87402 5.26212C1.61611 5.86144 1.48438 6.49786 1.48438 7.15284C1.48438 7.77072 1.61055 8.41456 1.86104 9.06954C2.0707 9.61691 2.37129 10.1847 2.75537 10.758C3.36397 11.6653 4.20078 12.6116 5.23984 13.5709C6.96172 15.161 8.6669 16.2595 8.73926 16.304L9.179 16.586C9.37383 16.7104 9.62432 16.7104 9.81914 16.586L10.2589 16.304C10.3313 16.2576 12.0346 15.161 13.7583 13.5709C14.7974 12.6116 15.6342 11.6653 16.2428 10.758C16.6269 10.1847 16.9293 9.61691 17.1371 9.06954C17.3876 8.41456 17.5138 7.77072 17.5138 7.15284C17.5156 6.49786 17.3839 5.86144 17.126 5.26212V5.26212Z" fill="#808080"/>
+                  </svg>
+                </div>
               </div>
+              <div class="row gx-4 song-row">
+                <div class="col-auto">
+                  <h5 class="text-start">Songname</h5>
+                  <p class="text-start">Artists</p>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1232141 Listens</h5>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1:47</h5>
+                </div>
+                <div class="col-auto">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.126 5.26212C16.8773 4.68625 16.5187 4.16441 16.0702 3.72579C15.6214 3.28587 15.0923 2.93628 14.5116 2.69601C13.9095 2.44588 13.2636 2.31785 12.6116 2.31935C11.6969 2.31935 10.8044 2.56984 10.0288 3.04298C9.84326 3.15617 9.66699 3.28048 9.5 3.41593C9.33301 3.28048 9.15674 3.15617 8.97119 3.04298C8.19561 2.56984 7.30313 2.31935 6.38838 2.31935C5.72969 2.31935 5.09141 2.44552 4.48838 2.69601C3.90576 2.93722 3.38066 3.28419 2.92979 3.72579C2.48076 4.16391 2.12206 4.68588 1.87402 5.26212C1.61611 5.86144 1.48438 6.49786 1.48438 7.15284C1.48438 7.77072 1.61055 8.41456 1.86104 9.06954C2.0707 9.61691 2.37129 10.1847 2.75537 10.758C3.36397 11.6653 4.20078 12.6116 5.23984 13.5709C6.96172 15.161 8.6669 16.2595 8.73926 16.304L9.179 16.586C9.37383 16.7104 9.62432 16.7104 9.81914 16.586L10.2589 16.304C10.3313 16.2576 12.0346 15.161 13.7583 13.5709C14.7974 12.6116 15.6342 11.6653 16.2428 10.758C16.6269 10.1847 16.9293 9.61691 17.1371 9.06954C17.3876 8.41456 17.5138 7.77072 17.5138 7.15284C17.5156 6.49786 17.3839 5.86144 17.126 5.26212V5.26212Z" fill="#808080"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="row gx-4 song-row">
+                <div class="col-auto">
+                  <h5 class="text-start">Songname</h5>
+                  <p class="text-start">Artists</p>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1232141 Listens</h5>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1:47</h5>
+                </div>
+                <div class="col-auto">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.126 5.26212C16.8773 4.68625 16.5187 4.16441 16.0702 3.72579C15.6214 3.28587 15.0923 2.93628 14.5116 2.69601C13.9095 2.44588 13.2636 2.31785 12.6116 2.31935C11.6969 2.31935 10.8044 2.56984 10.0288 3.04298C9.84326 3.15617 9.66699 3.28048 9.5 3.41593C9.33301 3.28048 9.15674 3.15617 8.97119 3.04298C8.19561 2.56984 7.30313 2.31935 6.38838 2.31935C5.72969 2.31935 5.09141 2.44552 4.48838 2.69601C3.90576 2.93722 3.38066 3.28419 2.92979 3.72579C2.48076 4.16391 2.12206 4.68588 1.87402 5.26212C1.61611 5.86144 1.48438 6.49786 1.48438 7.15284C1.48438 7.77072 1.61055 8.41456 1.86104 9.06954C2.0707 9.61691 2.37129 10.1847 2.75537 10.758C3.36397 11.6653 4.20078 12.6116 5.23984 13.5709C6.96172 15.161 8.6669 16.2595 8.73926 16.304L9.179 16.586C9.37383 16.7104 9.62432 16.7104 9.81914 16.586L10.2589 16.304C10.3313 16.2576 12.0346 15.161 13.7583 13.5709C14.7974 12.6116 15.6342 11.6653 16.2428 10.758C16.6269 10.1847 16.9293 9.61691 17.1371 9.06954C17.3876 8.41456 17.5138 7.77072 17.5138 7.15284C17.5156 6.49786 17.3839 5.86144 17.126 5.26212V5.26212Z" fill="#808080"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="row gx-4 song-row">
+                <div class="col-auto">
+                  <h5 class="text-start">Songname</h5>
+                  <p class="text-start">Artists</p>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1232141 Listens</h5>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1:47</h5>
+                </div>
+                <div class="col-auto">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.126 5.26212C16.8773 4.68625 16.5187 4.16441 16.0702 3.72579C15.6214 3.28587 15.0923 2.93628 14.5116 2.69601C13.9095 2.44588 13.2636 2.31785 12.6116 2.31935C11.6969 2.31935 10.8044 2.56984 10.0288 3.04298C9.84326 3.15617 9.66699 3.28048 9.5 3.41593C9.33301 3.28048 9.15674 3.15617 8.97119 3.04298C8.19561 2.56984 7.30313 2.31935 6.38838 2.31935C5.72969 2.31935 5.09141 2.44552 4.48838 2.69601C3.90576 2.93722 3.38066 3.28419 2.92979 3.72579C2.48076 4.16391 2.12206 4.68588 1.87402 5.26212C1.61611 5.86144 1.48438 6.49786 1.48438 7.15284C1.48438 7.77072 1.61055 8.41456 1.86104 9.06954C2.0707 9.61691 2.37129 10.1847 2.75537 10.758C3.36397 11.6653 4.20078 12.6116 5.23984 13.5709C6.96172 15.161 8.6669 16.2595 8.73926 16.304L9.179 16.586C9.37383 16.7104 9.62432 16.7104 9.81914 16.586L10.2589 16.304C10.3313 16.2576 12.0346 15.161 13.7583 13.5709C14.7974 12.6116 15.6342 11.6653 16.2428 10.758C16.6269 10.1847 16.9293 9.61691 17.1371 9.06954C17.3876 8.41456 17.5138 7.77072 17.5138 7.15284C17.5156 6.49786 17.3839 5.86144 17.126 5.26212V5.26212Z" fill="#808080"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="col-auto" id="second-song-column">
+              <div class="row gx-4 song-row">
+                <div class="col-auto">
+                  <h5 class="text-start">Songname</h5>
+                  <p class="text-start">Artists</p>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1232141 Listens</h5>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1:47</h5>
+                </div>
+                <div class="col-auto">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.126 5.26212C16.8773 4.68625 16.5187 4.16441 16.0702 3.72579C15.6214 3.28587 15.0923 2.93628 14.5116 2.69601C13.9095 2.44588 13.2636 2.31785 12.6116 2.31935C11.6969 2.31935 10.8044 2.56984 10.0288 3.04298C9.84326 3.15617 9.66699 3.28048 9.5 3.41593C9.33301 3.28048 9.15674 3.15617 8.97119 3.04298C8.19561 2.56984 7.30313 2.31935 6.38838 2.31935C5.72969 2.31935 5.09141 2.44552 4.48838 2.69601C3.90576 2.93722 3.38066 3.28419 2.92979 3.72579C2.48076 4.16391 2.12206 4.68588 1.87402 5.26212C1.61611 5.86144 1.48438 6.49786 1.48438 7.15284C1.48438 7.77072 1.61055 8.41456 1.86104 9.06954C2.0707 9.61691 2.37129 10.1847 2.75537 10.758C3.36397 11.6653 4.20078 12.6116 5.23984 13.5709C6.96172 15.161 8.6669 16.2595 8.73926 16.304L9.179 16.586C9.37383 16.7104 9.62432 16.7104 9.81914 16.586L10.2589 16.304C10.3313 16.2576 12.0346 15.161 13.7583 13.5709C14.7974 12.6116 15.6342 11.6653 16.2428 10.758C16.6269 10.1847 16.9293 9.61691 17.1371 9.06954C17.3876 8.41456 17.5138 7.77072 17.5138 7.15284C17.5156 6.49786 17.3839 5.86144 17.126 5.26212V5.26212Z" fill="#808080"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="row gx-4 song-row">
+                <div class="col-auto">
+                  <h5 class="text-start">Songname</h5>
+                  <p class="text-start">Artists</p>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1232141 Listens</h5>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1:47</h5>
+                </div>
+                <div class="col-auto">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.126 5.26212C16.8773 4.68625 16.5187 4.16441 16.0702 3.72579C15.6214 3.28587 15.0923 2.93628 14.5116 2.69601C13.9095 2.44588 13.2636 2.31785 12.6116 2.31935C11.6969 2.31935 10.8044 2.56984 10.0288 3.04298C9.84326 3.15617 9.66699 3.28048 9.5 3.41593C9.33301 3.28048 9.15674 3.15617 8.97119 3.04298C8.19561 2.56984 7.30313 2.31935 6.38838 2.31935C5.72969 2.31935 5.09141 2.44552 4.48838 2.69601C3.90576 2.93722 3.38066 3.28419 2.92979 3.72579C2.48076 4.16391 2.12206 4.68588 1.87402 5.26212C1.61611 5.86144 1.48438 6.49786 1.48438 7.15284C1.48438 7.77072 1.61055 8.41456 1.86104 9.06954C2.0707 9.61691 2.37129 10.1847 2.75537 10.758C3.36397 11.6653 4.20078 12.6116 5.23984 13.5709C6.96172 15.161 8.6669 16.2595 8.73926 16.304L9.179 16.586C9.37383 16.7104 9.62432 16.7104 9.81914 16.586L10.2589 16.304C10.3313 16.2576 12.0346 15.161 13.7583 13.5709C14.7974 12.6116 15.6342 11.6653 16.2428 10.758C16.6269 10.1847 16.9293 9.61691 17.1371 9.06954C17.3876 8.41456 17.5138 7.77072 17.5138 7.15284C17.5156 6.49786 17.3839 5.86144 17.126 5.26212V5.26212Z" fill="#808080"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="row gx-4 song-row">
+                <div class="col-auto">
+                  <h5 class="text-start">Songname</h5>
+                  <p class="text-start">Artists</p>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1232141 Listens</h5>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1:47</h5>
+                </div>
+                <div class="col-auto">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.126 5.26212C16.8773 4.68625 16.5187 4.16441 16.0702 3.72579C15.6214 3.28587 15.0923 2.93628 14.5116 2.69601C13.9095 2.44588 13.2636 2.31785 12.6116 2.31935C11.6969 2.31935 10.8044 2.56984 10.0288 3.04298C9.84326 3.15617 9.66699 3.28048 9.5 3.41593C9.33301 3.28048 9.15674 3.15617 8.97119 3.04298C8.19561 2.56984 7.30313 2.31935 6.38838 2.31935C5.72969 2.31935 5.09141 2.44552 4.48838 2.69601C3.90576 2.93722 3.38066 3.28419 2.92979 3.72579C2.48076 4.16391 2.12206 4.68588 1.87402 5.26212C1.61611 5.86144 1.48438 6.49786 1.48438 7.15284C1.48438 7.77072 1.61055 8.41456 1.86104 9.06954C2.0707 9.61691 2.37129 10.1847 2.75537 10.758C3.36397 11.6653 4.20078 12.6116 5.23984 13.5709C6.96172 15.161 8.6669 16.2595 8.73926 16.304L9.179 16.586C9.37383 16.7104 9.62432 16.7104 9.81914 16.586L10.2589 16.304C10.3313 16.2576 12.0346 15.161 13.7583 13.5709C14.7974 12.6116 15.6342 11.6653 16.2428 10.758C16.6269 10.1847 16.9293 9.61691 17.1371 9.06954C17.3876 8.41456 17.5138 7.77072 17.5138 7.15284C17.5156 6.49786 17.3839 5.86144 17.126 5.26212V5.26212Z" fill="#808080"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="row gx-4 song-row">
+                <div class="col-auto">
+                  <h5 class="text-start">Songname</h5>
+                  <p class="text-start">Artists</p>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1232141 Listens</h5>
+                </div>
+                <div class="col-auto">
+                  <h5 class="text-start">1:47</h5>
+                </div>
+                <div class="col-auto">
+                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.126 5.26212C16.8773 4.68625 16.5187 4.16441 16.0702 3.72579C15.6214 3.28587 15.0923 2.93628 14.5116 2.69601C13.9095 2.44588 13.2636 2.31785 12.6116 2.31935C11.6969 2.31935 10.8044 2.56984 10.0288 3.04298C9.84326 3.15617 9.66699 3.28048 9.5 3.41593C9.33301 3.28048 9.15674 3.15617 8.97119 3.04298C8.19561 2.56984 7.30313 2.31935 6.38838 2.31935C5.72969 2.31935 5.09141 2.44552 4.48838 2.69601C3.90576 2.93722 3.38066 3.28419 2.92979 3.72579C2.48076 4.16391 2.12206 4.68588 1.87402 5.26212C1.61611 5.86144 1.48438 6.49786 1.48438 7.15284C1.48438 7.77072 1.61055 8.41456 1.86104 9.06954C2.0707 9.61691 2.37129 10.1847 2.75537 10.758C3.36397 11.6653 4.20078 12.6116 5.23984 13.5709C6.96172 15.161 8.6669 16.2595 8.73926 16.304L9.179 16.586C9.37383 16.7104 9.62432 16.7104 9.81914 16.586L10.2589 16.304C10.3313 16.2576 12.0346 15.161 13.7583 13.5709C14.7974 12.6116 15.6342 11.6653 16.2428 10.758C16.6269 10.1847 16.9293 9.61691 17.1371 9.06954C17.3876 8.41456 17.5138 7.77072 17.5138 7.15284C17.5156 6.49786 17.3839 5.86144 17.126 5.26212V5.26212Z" fill="#808080"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
 
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <button style="background-color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg>
-                  </button>
-                </button>
-              </div>
-            </div>  
-                 
-            <div class = "row songs-only">
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <button style="background-color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg></button>
-                </button>
-              </div>
 
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <button style="background-color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg>
-                  </button>
-                </button>
-              </div>
-            </div>  
-            <div class = "row songs-only">
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <button style="background-color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg>
-                  </button>
-                </button>
-              </div>
-
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <button style="background-color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg>
-                  </button>
-                </button>
-              </div>
-            </div>  
-            <div class = "row songs-only">
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <button style="background-color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg>
-                  </button>
-                </button>
-              </div>
-
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <i class="bi bi-heart-fill"></i>
-                  <button style="background-color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg>
-                  </button>
-                </button>
-              </div>
-            </div>  
-            <div class = "row songs-only">
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <button style="background-color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg>
-                  </button>
-                </button>
-              </div>
-
-              <div class="col d-flex">
-                <button type="button" class="btn btn-outline-dark lists ">
-                  1. Song Name &emsp; 1234567Listen &emsp; 1:47
-                  <button style="background-color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                    </svg>
-                  </button>
-                </button>
-              </div>
-            </div>  
-            
+  <div class="container-fluid">
+    <h4>FOR YOU</h4>
+      <div class="row playlists">
+        <div class="col ">
+          <div class="card" >
+            <img src="../img/img-14.png" class="card-img-top mx-auto " alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-start">Genre Name</h5>
+              <p class="card-text text-start">Artist</p>
+            </div>
           </div>
         </div>
-
-    </div>
-</div>
-
-    
-</div>
-<!--
-  The 
--->
-
-<div class="row playlists" style="margin-right: 30px;">
-  <h4 style="color:#F94D16; margin-left: 20px;">
-    TOP PLAYLISTS:
-  </h4>
-
-  <div class="col d-flex justify-content-center " style="margin-left: 50px;">
-    <div class="card" style="width: 10rem;">
-      <img src="../img/img-2.jpg" class="card-img-top mx-auto" alt="...">
-      <div class="card-body d-flex">
-        <h5 class="card-title">Genre Name</h5>
-        <p class="card-text"><br>Artist</p>
+        <div class="col">
+          <div class="card" >
+            <img src="../img/img-15.png" class="card-img-top mx-auto " alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-start">Genre Name</h5>
+              <p class="card-text text-start">Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img src="../img/img-16.png" class="card-img-top mx-auto " alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-start">Genre Name</h5>
+              <p class="card-text text-start">Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img src="../img/img-17.png" class="card-img-top mx-auto " alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-start">Genre Name</h5>
+              <p class="card-text text-start">Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img src="../img/img-18.png" class="card-img-top mx-auto " alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-start">Genre Name</h5>
+              <p class="card-text text-start">Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img src="../img/img-1.png" class="card-img-top mx-auto " alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-start">Genre Name</h5>
+              <p class="card-text text-start">Artist</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" >
+            <img src="../img/img-3.jpg" class="card-img-top mx-auto " alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-start">Genre Name</h5>
+              <p class="card-text text-start">Artist</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   </div>
-
-  <div class="col d-flex justify-content-center">
-    <div class="card" style="width: 10rem;">
-      <img src="../img/img-2.jpg" class="card-img-top mx-auto" alt="...">
-      <div class="card-body d-flex">
-        <h5 class="card-title">Genre Name</h5>
-        <p class="card-text"><br>Artist</p>
-      </div>
-    </div>
-  </div>
-  <div class="col d-flex justify-content-center">
-    <div class="card" style="width: 10rem;">
-      <img src="../img/img-2.jpg" class="card-img-top mx-auto" alt="...">
-      <div class="card-body d-flex">
-        <h5 class="card-title">Genre Name</h5>
-        <p class="card-text"><br>Artist</p>
-      </div>
-    </div>
-  </div>
-  <div class="col d-flex justify-content-center">
-    <div class="card" style="width: 10rem;">
-      <img src="../img/img-2.jpg" class="card-img-top mx-auto" alt="...">
-      <div class="card-body d-flex">
-        <h5 class="card-title">Genre Name</h5>
-        <p class="card-text"><br>Artist</p>
-      </div>
-    </div>
-  </div>
-  <div class="col d-flex justify-content-center">
-    <div class="card" style="width: 10rem;">
-      <img src="../img/img-2.jpg" class="card-img-top mx-auto" alt="...">
-      <div class="card-body d-flex">
-        <h5 class="card-title">Genre Name</h5>
-        <p class="card-text"><br>Artist</p>
-      </div>
-    </div>
-  </div>
-  <div class="col d-flex justify-content-center">
-    <div class="card" style="width: 10rem;">
-      <img src="../img/img-2.jpg" class="card-img-top mx-auto" alt="...">
-      <div class="card-body d-flex">
-        <h5 class="card-title">Genre Name</h5>
-        <p class="card-text"><br>Artist</p>
-      </div>
-    </div>
-  </div>
-  <div class="col d-flex justify-content-center">
-    <div class="card" style="width: 10rem;">
-      <img src="../img/img-2.jpg" class="card-img-top mx-auto" alt="...">
-      <div class="card-body d-flex">
-        <h5 class="card-title">Genre Name</h5>
-        <p class="card-text"><br>Artist</p>
-      </div>
-    </div>
-  </div>
-</div>
+  <!-- SEARCH CONTENT END -->
 
     <!-- breaks so that play bar scrolls further -->
     <br>
@@ -282,72 +292,71 @@
     <br>
     <br>
     <br>
-  <!-- Home content END -->
   
-  <!-- Play bar -->
-    <nav id="play-bar" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-bottom justify-content-center">
-      <div class="container-fluid">
-        <button class="navbar-toggler ms-auto" type="button"
-          data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="navbar-collapse collapse">
-          <ul class="navbar-nav me-auto">
+    <!-- Play bar -->
+  <nav id="play-bar" class="navbar navbar-expand-sm bg-primary fixed-bottom">
+    <div class="container-fluid">
+      <div class="navbar-collapse collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <img src="../img/img-2.jpg" class="d-inline-block my-2">
+          </li>
+          <li class="nav-item" id="playing-song-info">
+            <h5 class="text-start">Songname</h5>
+            <p class="text-start">Artists</p>
+          </li>
+        </ul>
+        <div class="" id="controls">
+          <ul id="play-bar-buttons" class="navbar-nav justify-content-center">
             <li class="nav-item">
-              <img src="../img/img-2.jpg" class="d-inline-block my-2">
-            </li>
-            <li class="nav-item" id="playing-song-info">
-              <h5>Songname</h5>
-              <p >Artists</p>
-            </li>
-          </ul>
-  
-          <ul id="play-bar-buttons" class="navbar-nav ">
-            <li class="nav-item active">
               <a class="nav-link" href="#">
                 <i class="bi bi-repeat"></i>
               </a>
             </li>
-  
-            <li class="nav-item active">
+
+            <li class="nav-item">
               <a class="nav-link" href="#">
                 <i class="bi bi-skip-start-fill"></i>
               </a>
             </li>
-  
-            <li class="nav-item active">
+
+            <li class="nav-item">
               <a class="nav-link" href="#">
                 <i class="bi bi-play-fill"></i>
               </a>
             </li>
-  
-            <li class="nav-item active">
+
+            <li class="nav-item">
               <a class="nav-link" href="#">
                 <i class="bi bi-skip-end-fill"></i>
               </a>
             </li>
-  
-            <li class="nav-item active">
+
+            <li class="nav-item">
               <a class="nav-link" href="#">
                 <i class="bi bi-shuffle"></i>
               </a>
             </li>
           </ul>
-  
-          <div class="form-inline ms-auto">
-            <label class="text-secondary" for="volume-slider"><i class="bi
-              bi-volume-up-fill"></i> </label>
-            <input type="range" class="mr-sm-2" id="volume-slider">
+          <div class="progress-block text-white d-flex justify-content-between align-items-center">
+            <div style="margin-right: 10px;">0:00</div>
+            <div class="progress w-100">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25%" aria-valuemin="0" aria-valuemax="100%"></div>
+            </div>
+            <div style="margin-left: 10px;">2:59</div>
           </div>
         </div>
+        <div class="form-inline ms-auto">
+          <label class="text-secondary" for="volume-slider"><i class="bi
+            bi-volume-up-fill"></i> 
+          </label>
+          <input type="range" class="volume-control" id="volume-slider">
+        </div>
       </div>
-    </nav>
-    <!-- Play bar end -->
+    </div>
+  </nav>
 
-    
+  <!-- Play bar end -->
 </body>
 </html>
 
