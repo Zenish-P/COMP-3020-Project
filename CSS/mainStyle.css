@@ -5,10 +5,13 @@ body {
     background: black;
 }
 
+#top-navbar .active a {
+    color: #F94D16;
+}
 
 .navbar {
     color: black;
-    height: 3vw;
+    height: 3rem;
 }
 
 .bg-primary
@@ -45,7 +48,7 @@ body {
     outline: none;
     padding: 0 20px;
     width: 100%;
-    height: 1.2vw;
+    height: 1.5rem;
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
