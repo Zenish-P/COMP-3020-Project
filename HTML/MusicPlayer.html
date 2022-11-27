@@ -7,6 +7,35 @@
     <title>Music Player</title>
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function ()
+        {
+          function getUrlParameter(sParam) 
+          {
+            var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+            for (i = 0; i < sURLVariables.length; i++) 
+            {
+              sParameterName = sURLVariables[i].split('=');
+
+              if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+              }
+            }
+            return false;
+          };
+
+          //alert(getUrlParameter('musicname'));
+          //alert(getUrlParameter('bandname'));
+
+          $('#musicName').text(getUrlParameter('musicname') + ' - ' + getUrlParameter('bandname'));
+        }
+      );
+    </script>
   </head>
 
   <body>
@@ -90,15 +119,13 @@
                 <div class="slide">
                     <input type="range" class="form-range" id="customRange1">
                 </div>
-            </div>
-            
+            </div> 
             </div>
         </div>
-    
       </div>
 
     <div class="musicname">
-        <b><p>ANIMALS - MAROON 5</p></b>
+        <b><p><span id="musicName">ANIMALS - MAROON 5</span></p></b>
         <div class="time">
             <b><p>3:45</p></b>
         </div>
