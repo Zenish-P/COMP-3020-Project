@@ -33,6 +33,7 @@
           //alert(getUrlParameter('bandname'));
 
           $('#musicName').text(getUrlParameter('musicname') + ' - ' + getUrlParameter('bandname'));
+          $('#musicTime').text(getUrlParameter('time'));
         }
       );
     </script>
@@ -127,7 +128,7 @@
     <div class="musicname">
         <b><p><span id="musicName">ANIMALS - MAROON 5</span></p></b>
         <div class="time">
-            <b><p>3:45</p></b>
+            <b><p><span id="musicTime">3:45</span></p></b>
         </div>
     </div>
 
