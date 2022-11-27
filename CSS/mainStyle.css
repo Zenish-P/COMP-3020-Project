@@ -375,6 +375,23 @@ ul
 .song-hover:hover{
     color: #F94D16;
 }
+.set-col{
+    --bs-btn-color: #ffffff;
+    --bs-btn-font-size: 1.5rem;
+  }
+.dropdown-menu{
+    font-family: 'IM FELL French Canon';
+    font-size: 17px;
+    background: #46464a;
+    --bs-dropdown-link-color: white;
+    --bs-dropdown-link-hover-color: #F94D16;
+    display: block;
+    visibility: collapse;
+}
+
+.btn-group:hover .dropdown-menu{
+    visibility: visible;
+}
 /* Container with songs END */
 
 /* Search-Only-By-Songs END */
