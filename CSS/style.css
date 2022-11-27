@@ -297,7 +297,7 @@ a:hover {
   height: 6vh;
   width: 10vw;
   padding-top: 1vh;
-  padding-left: 2.5vw;
+  text-align: center;
   position: absolute;
   bottom: 60vh;
   left: 10vw;
@@ -311,7 +311,7 @@ a:hover {
   height: 6vh;
   width: 10vw;
   padding-top: 1vh;
-  padding-left: 2.5vw;
+  text-align: center;
   position: absolute;
   bottom: 60vh;
   left: 75vw;
@@ -333,7 +333,8 @@ a:hover {
 }
 
 .dropdown-content {
-  border: 3px solid white;
+  border: 2px solid white;
+  border-radius: 20px;
   display: none;
   position: absolute;
   background-color: #46464a;
@@ -535,6 +536,35 @@ img {
 
 .slide{
   
+}
+.set-col{
+  --bs-btn-color: #ffffff;
+  --bs-btn-font-size: 2rem;
+}
+.dropdown-menu{
+  font-family: 'IM FELL French Canon';
+  font-size: 17px;
+  background: #46464a;
+  border: 2px solid white;
+  --bs-dropdown-link-color: white;
+  --bs-dropdown-link-hover-color: #F94D16;
+  display: block;
+  visibility: collapse;
+}
+.dropdown-menu a {
+  font-family: 'IM FELL French Canon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  color:white;
+  text-decoration: none;
+}
+.lyrics-container:hover .dropdown-menu{
+  visibility: visible;
+}
+.queue-container:hover .dropdown-menu{
+  visibility: visible;
 }
 
 @keyframes fill{
