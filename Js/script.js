@@ -1,16 +1,17 @@
 const pages = {
     'home': '../HTML/HomePage.html',
-    'search': '../HTML/searchPage.html'
+    'search': '../HTML/searchPage.html',
+    'music-player': '../HTML/MusicPlayer.html',
 };
 
 const buttons = {
-    'home': 'li#home-btn',
-    'search': 'li#explore-btn'
+    'home': '#home-btn',
+    'search': '#explore-btn'
 };
 
 let currentPage = '';
 switchPage('home');
-addNavEvents();
+$(addNavEvents);
 
 /**
  * FUNCTIONS
@@ -32,6 +33,11 @@ function addNavEvents() {
     $('#explore-btn').on('click', () => {
         switchPage('search');
     });
+
+    $('#main-body').on('click', '.card', () => {
+        switchPage('music-player');
+    });
+
 }
 
 function switchPage(page) {
