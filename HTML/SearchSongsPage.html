@@ -25,7 +25,7 @@
                         <a class="nav-link" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Explore</a>
+                        <a class="nav-link text-success" href="#">Explore</a>
                     </li>
                 </ul>
             </div>
@@ -45,13 +45,14 @@
     <div id="main-content">
         <div class="container-fluid">
             <!--Search options - Start-->
-            <div class="optionsBar">
-                <h4>SEARCH BY:
-                    <button type="button" class="btn btn-outline-dark optionBtn">ARTISTS</button>
-                    <button type="button" class="btn btn-outline-dark optionBtn">SONGS</button>
-                    <button type="button" class="btn btn-outline-dark optionBtn">GENRES</button>
-                    <button type="button" class="btn btn-outline-dark optionBtn">PLAYLISTS</button>
-                </h4>
+            <div class = "container-fluid" id="options-bar">
+                <div class="optionsBar d-flex justify-content-start flex-row">
+                  <h4>SEARCH BY:</h4>
+                  <button type="button" id="artists-only" class="btn btn-outline-dark optionBtn">artists</button>
+                  <button type="button" id="songs-only" class="btn btn-outline-dark optionBtn optionBtn-success">songs</button>
+                  <button type="button" id="genres-only" class="btn btn-outline-dark optionBtn">genres</button>
+                  <button type="button" id="lists-only" class="btn btn-outline-dark optionBtn">playlists</button>
+                </div>
             </div>
             <!--Search options - End  -->
             <!-- Solid container for songs START -->

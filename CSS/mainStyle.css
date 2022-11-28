@@ -312,11 +312,7 @@ ul
     margin-left: 20px;
 }
 
-.optionsbar h4 {
-    width: 10vw;
-    color: #F94D16;
-    margin-left: auto;
-}
+
 
 .optionBtn {
     border-color: #808080;
@@ -326,6 +322,12 @@ ul
 .optionBtn > button:hover {
     border-color: #F94D16;
     /* color: #fff; */
+}
+
+.optionBtn-success
+{
+    border-color: #F94D16 !important;
+    color: #F94D16 !important;
 }
 
 /* Option Bar END */
@@ -404,6 +406,7 @@ ul
 #options-bar h4
 {
     margin: 0;
+    margin-left: 2.7rem;
 }
 
 #options-bar .btn
@@ -424,7 +427,6 @@ ul
 #options-bar
 {
     margin-top: 30px;
-    margin-left: 2.7rem;
 }
 
 
