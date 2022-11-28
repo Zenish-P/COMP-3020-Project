@@ -390,9 +390,7 @@ ul
     color: #808080;
     font-size: 17px;
 }
-.song-hover:hover{
-    color: #F94D16;
-}
+
 .set-col{
     --bs-btn-color: #ffffff;
     --bs-btn-font-size: 1.5rem;
@@ -410,6 +408,43 @@ ul
 .btn-group:hover .dropdown-menu{
     visibility: visible;
 }
+
+.dropdown-toggle
+{
+    visibility: hidden;
+}
+
+.likeAndAdd:hover{    
+    color: #F94D16;
+}
+
+.likeAndAdd
+{
+    visibility: hidden;
+    color: #808080;
+}
+
+.container:hover .likeAndAdd,
+.container:hover .btn-group,
+.container:hover .dropdown-toggle
+{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.container:hover th.song-hover
+{
+    color: #F94D16;
+    cursor: pointer;
+}
+
+.container:hover .song-number,
+.container:hover .views-number,
+.container:hover .time-number
+{
+    color: #F94D16;
+}
+
 /* Container with songs END */
 
 /* Search-Only-By-Songs END */
@@ -588,9 +623,6 @@ path:hover
     font-size: medium;
 
     color: #FFFFFF;
-}
-.likeAndAdd:hover{    
-    color: #F94D16;
 }
 /*SearchPage ENDS*/
 
