@@ -43,6 +43,13 @@ function addNavEvents() {
     $('#main-body').on('click', '#songs-only', () => {
         switchPage('search-songs');
     });
+    
+    $(document).on('keypress', (e) => {
+        if (e.which == 13) {
+            switchPage('search')
+            $('#searchbox input').focus();
+        }
+    });
 
 }
 
