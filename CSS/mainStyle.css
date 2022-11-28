@@ -34,6 +34,11 @@ body {
     height: 5rem;
 }
 
+#top-navbar img:hover
+{
+    cursor: pointer;
+}
+
 #top-navbar i
 {
     font-size: 2rem;
@@ -74,6 +79,7 @@ body {
 .nav-item > a:hover
 {
     color: #F94D16 !important;
+    cursor: pointer;
 }
 
 /* makes active button orange */
@@ -289,6 +295,16 @@ ul
 {
     background-color: #F94D16 !important;
     color: #F94D16 !important;
+}
+
+#controls i
+{
+    color: #F8F8F8;
+}
+
+#controls i:hover
+{
+    color: #F94D16;
 }
 /* Play Bar END*/
 
