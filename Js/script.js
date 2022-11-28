@@ -58,13 +58,10 @@ function switchPage(page) {
         currentPage = page;
         $('#main-body').load(pages[page] + ' #main-content');
         for (b in buttons) {
-            if (b === page) {
-                $(buttons[page]).addClass('active');
-            } else {
-                $(buttons[b]).removeClass('active');
-            }
+            $(buttons[b]).removeClass('active');
         }
-        
+        $(buttons[page]).addClass('active');
+
         if (page === 'music-player') {
           function getUrlParameter(sParam) 
           {
