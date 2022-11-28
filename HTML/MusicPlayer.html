@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/mainStyle.css" />
   </head>
 
   <body>
@@ -41,89 +41,86 @@
   <!-- Music Page START -->
     <div id="main-content">
       <div class="lyrics-container">
-          <div class="dropdown">
-              <span>LYRICS</span>
-              <div class="dropdown-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
+        <div class="dropdown">
+            <span>LYRICS</span>
+            <div class="dropdown-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
+          </div>
       </div>
 
       <div class="prev-music-container">
-          <button class="prevbutton">
-              <img src="../img/prevbutton.jpeg" alt="buttonpng" class="prev-image"/>
-          </button>
+        <button class="prevbutton">
+            <img src="../img/prevbutton.jpeg" alt="buttonpng" class="prev-image"/>
+        </button>
       </div>
-
-      <div class="circle-wrap">
-          <div class="circle">
-            <div class="mask full">
-              <div class="fill"></div>
-            </div>
-            <div class="mask half">
-              <div class="fill"></div>
-            </div>
-              <div>
-                  <img src="../img/img-3.jpg" alt="music image" class="inner-image">
-              </div>
-          </div>
-
-          <div class="playbar-container">
-              <button class="button button1">
-                  <img src="../img/playbutton.jpeg" alt="buttonpng"/>
-              </button>
-              <button class="button button2">
-                  <img src="../img/shufflebutton.jpeg" alt="buttonpng"/>
-              </button>
-              <button class="button button3">
-                  <img src="../img/repeat.jpeg" alt="buttonpng"/>
-              </button>
-              <button class="button button4">
-                  <img src="../img/heartbutton.png" width="50px" height="50px" alt="buttonpng"/>
-              </button>
-              <div class = volume-logo>
-                  <label for="customRange1" class="form-label"><img src="../img/volume.png" width="50px" height="50px" alt="buttonpng"/></label>
-              </div> 
-              <div class="slidecontainer">
-                  <div class="slide">
-                      <input type="range" class="form-range" id="customRange1">
-                  </div>
-              </div>
-              
-              </div>
-          </div>
-      
-        </div>
 
       <div class="musicname">
-          <b><p>ANIMALS - MAROON 5</p></b>
-          <div class="time">
-              <b><p>3:45</p></b>
+        <b><p><span id="musicName">ANIMALS - MAROON 5</span></p></b>
+        <div class="time">
+            <b><p>3:45</p></b>
+        </div>
+    </div>
+
+    <div class="next-music-container">
+      <button class="prevbutton">
+          <img src="../img/nextbutton.jpeg" alt="buttonpng" class="prev-image"/>
+      </button>
+  </div>
+
+    <div class="circle-wrap">
+        <div class="circle">
+          <div class="mask full">
+            <div class="fill"></div>
           </div>
-      </div>
+          <div class="mask half">
+            <div class="fill"></div>
+          </div>
+            <div>
+                <img src="../img/img-3.jpg" alt="music image" class="inner-image">
+            </div>
+        </div>
 
-      <div class="next-music-container">
-          <button class="prevbutton">
-              <img src="../img/nextbutton.jpeg" alt="buttonpng" class="prev-image"/>
-          </button>
-      </div>
-
-      <div class="queue-container">
-          <div class="dropdown">
-              <span>QUEUE</span>
-              <div class="dropdown-content">
-                <p>1. Music A</p>
-                <p>2. Music B</p>
-                <p>3. Music C</p>
-                <p>4. Music D</p>
-              </div>
+        <div class="playbar-container">
+            <button class="button button1">
+                <img src="../img/playbutton.jpeg" alt="buttonpng"/>
+            </button>
+            <button class="button button2">
+                <img src="../img/shufflebutton.jpeg" alt="buttonpng"/>
+            </button>
+            <button class="button button3">
+                <img src="../img/repeat.jpeg" alt="buttonpng"/>
+            </button>
+            <button class="button button4">
+                <img src="../img/heartbutton.png" width="50px" height="50px" alt="buttonpng"/>
+            </button>
+            <div class = volume-logo>
+                <label for="customRange1" class="form-label"><img src="../img/volume.png" width="50px" height="50px" alt="buttonpng"/></label>
+            </div> 
+            <div class="slidecontainer">
+                <div class="slide">
+                    <input type="range" class="form-range" id="customRange1">
+                </div>
+            </div> 
             </div>
       </div>
+
+    <div class="queue-container">
+        <div class="dropdown">
+            <span>QUEUE</span>
+            <div class="dropdown-content">
+              <p>1. Music A</p>
+              <p>2. Music B</p>
+              <p>3. Music C</p>
+              <p>4. Music D</p>
+            </div>
+          </div>
     </div>
-     
+    </div>
+
     <script src="../Js/bootstrap.min.js"></script>
     <script src="../Js/script.js"></script>
   </body>
