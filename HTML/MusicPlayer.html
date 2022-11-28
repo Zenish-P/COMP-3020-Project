@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Music Player</title>
   <link rel="stylesheet" href="../CSS/bootstrap.min.css">
-  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/mainStyle.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script>
     $(document).ready(function () {
@@ -67,7 +67,7 @@
   <!-- nav bar END -->
 
   <!-- Music Page START -->
-  <div class="main-content">
+  <div id="main-content">
     <div class="lyrics-container">
       <div class="dropdown">
         <span>LYRICS</span>
@@ -81,13 +81,10 @@
 
     </div>
 
-    <div class="prev-music-container">
-      <button class="prevbutton">
-        <img src="../img/prevbutton.jpeg" alt="buttonpng" class="prev-image" />
-      </button>
-    </div>
+    
 
     <div class="circle-wrap">
+     
       <div class="circle">
         <div class="mask full">
           <div class="fill"></div>
@@ -98,8 +95,8 @@
         <div>
           <img src="../img/img-3.jpg" alt="music image" class="inner-image">
         </div>
+        
       </div>
-
       <div class="playbar-container">
         <button class="button button1">
           <img src="../img/playbutton.jpeg" alt="buttonpng" />
@@ -123,6 +120,7 @@
           </div>
         </div>
       </div>
+      
     </div>
 
 
@@ -137,11 +135,7 @@
       </div>
     </div>
 
-    <div class="next-music-container">
-      <button class="prevbutton">
-        <img src="../img/nextbutton.jpeg" alt="buttonpng" class="prev-image" />
-      </button>
-    </div>
+    
 
     <div class="queue-container">
       <div class="dropdown">
